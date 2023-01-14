@@ -1,0 +1,1448 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+
+
+section{
+    padding: 20px;
+}
+
+.header1{
+    background-color: rgb(250, 250, 250);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header1 .content{
+    padding: 3px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.header1 .content ul{
+    display: flex;
+    list-style: none;
+}
+
+.header1 .content ul li{
+    margin: 0px 10px;
+}
+
+.header1 .content ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+.header1 .content ul li a:hover{
+    color: #198307;
+}
+
+.header1 .content .address p{
+    font-size: 0.8em;
+}
+
+.header1 .content .address p a{
+    text-decoration: none;
+    color: rgb(47, 51, 45);
+}
+
+.header2{
+    position: sticky;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    padding: 20px 70px;
+    z-index: 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 9;
+    background-color: #fff;
+   
+}
+
+.header2.sticky{
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+}
+
+header .logo{
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+header .logo span{
+    color: #198307;
+}
+header .navigation{
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+   
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+header .navigation li a:hover{
+    color: #198307;
+
+  
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    align-items: center;
+    background: url(/img/coverpage.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    
+}
+
+.banner .content{
+    margin-left: 60px;
+    max-width: 550px;
+    text-align: left;
+}
+.banner .content .heading{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+
+.banner .content h2 {
+  font-size: 4em;
+  color: #111;
+  line-height: 75px;
+  margin-left: -23px;
+  border-left: 4px solid green;
+  padding-left: 22px;
+}
+.banner .content .peragraph{
+    display: flex;
+    justify-content: start;
+}
+.banner .content .peragraph p{
+    font-size: 0.9em;
+    color: #111;
+    margin-top: 20px;
+    padding: 0px 10px;
+
+}
+.banner .content .peragraph p i{
+    color: #198307;
+}
+
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #198307;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+
+}
+
+
+.feacturedProduct .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    
+    background: url(/img/lightbg.png);
+    background-size: 500px;
+    
+}
+
+
+
+
+.feacturedProduct .content .box{
+    width: 350px;
+    margin: 15px;
+    box-shadow: 0 0px 1px #111;
+    transition: 0.5s;
+    display: flex;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.feacturedProduct .content .box:hover{
+    transform: scale(1.05);
+
+}
+
+  
+
+  .feacturedProduct .content .box .imgbx{
+    position: relative;
+    width: 50%;
+    height: 200px;
+    
+  }
+
+  .feacturedProduct .content .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+    
+  }
+
+  .feacturedProduct .content .box .text {
+    background-color: rgb(186, 253, 172);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.feacturedProduct .content .box .text h3 {
+    width: 6em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+  .feacturedProduct .content .box .text h2{
+    background-color: #ffffff;
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.feacturedProduct .content .box .text h2:hover{
+      font-weight: 600;
+   
+
+
+  }
+  .feacturedProduct .content .box .text p{
+    text-align: center;
+  }
+
+  .feacturedProduct .content .box .text h2 a{
+    text-decoration: none;
+    color: rgb(0, 78, 18);
+    
+  }
+
+  .feacturedProduct .content .box .imgbx .menu-card-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    font-size: 1.3em;
+    color: #111;
+    opacity: 0.8;
+    background-color: rgb(121, 195, 106);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .feacturedProduct .content .box .imgbx .menu-card-btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    
+  }
+
+  
+  .catogary .content{
+    display: flex;
+   justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    
+    
+  }
+  .titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.titleText span{
+    color: #198307;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+  
+.catogary .content .box{
+    width: 150px;
+    margin: 10px;
+    box-shadow: 0 0px 1px #111;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.catogary .content .box:hover{
+    transform: scale(1.05);
+
+}
+
+
+
+.catogary .content .box .imgbx img {
+    position: relative;
+    top: 0;
+    width: 50%;
+    height: 70%;
+    
+    display: flex;
+    justify-content: center;
+}
+  .catogary .content .box .imgbx {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    /* text-align: center; */
+    left: 41px;
+    /* background-position: center; */
+    top: 20px;
+}
+
+  .catogary .content .box .text h4{
+    
+    text-align: center;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #198307;
+  }
+
+  .offer .content{
+    display: flex;
+   
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    
+  
+    
+}
+
+
+
+
+.offer .content .box1{
+    width: 49.5%;
+    background: url(/img/offer1.jpg);
+    background-size: cover;
+    box-shadow: 0 0px 1px #111;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 400px;
+    display: flex;
+    margin: 3px;
+    overflow: hidden;
+    
+    
+}
+.offer .content .box1 .title{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+}
+
+  
+
+  .offer .content .box1 h2{
+    font-weight: 600;
+    font-size: 2em; 
+    margin-top: 10px;
+    color: #763c00;
+  }
+  .offer .content .box1 .title p{
+    color: rgb(52, 52, 52);
+    margin-top: 10px;
+  }
+  .offer .content .box1 .title p span{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #111;
+    
+  }
+
+  .offer .content .box1 .title a{
+    padding: 10px;
+    background-color: #198307;
+    width: 150px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+  }
+  .offer .content .box1 .title a:hover{
+    letter-spacing: 4px;
+  }
+/*--------------------------------------------------------------------------------------- */
+  .offer .content .box2{
+    width: 49.5%;
+    background: url(/img/offer3.jpg);
+    background-size: cover;
+    box-shadow: 0 0px 1px #111;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 400px;
+    display: flex;
+    margin: 3px;
+    
+    overflow: hidden;
+    
+    
+}
+.offer .content .box2 .title{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    margin-top: 130px;
+}
+
+  
+
+  .offer .content .box2 h2{
+    font-weight: 600;
+    font-size: 2em; 
+    margin-top: 10px;
+    color: #fff;
+  }
+  .offer .content .box2 .title p{
+    color: rgb(223, 223, 223);
+    margin-top: 10px;
+  }
+  .offer .content .box2 .title p span{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    
+  }
+
+  .offer .content .box2 .title a{
+    padding: 10px;
+    background-color: #198307;
+    width: 150px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+  }
+
+  .offer .content .box2 .title a:hover{
+    letter-spacing: 4px;
+  }
+
+  /*------------------------------------------------------------------------------ */
+
+  .offer .content .box3{
+    width: 49.5%;
+    background: url(/img/offer4.jpg);
+    background-size: cover;
+    box-shadow: 0 0px 1px #111;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 400px;
+    display: flex;
+    margin: 3px;
+    
+    overflow: hidden;
+    
+    
+}
+.offer .content .box3 .title{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    margin-top: 50px;
+}
+
+  
+
+  .offer .content .box3 h2{
+    font-weight: 600;
+    font-size: 2em; 
+    margin-top: 10px;
+    color: #fff;
+  }
+  .offer .content .box3 .title p{
+    color: rgb(223, 223, 223);
+    margin-top: 10px;
+  }
+  .offer .content .box3 .title p span{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    
+  }
+
+  .offer .content .box3 .title a{
+    padding: 10px;
+    background-color: #198307;
+    width: 150px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+  }
+
+  .offer .content .box3 .title a:hover{
+    letter-spacing: 4px;
+  }
+
+  /* ------------------------------------------------------------- */
+  .offer .content .box4{
+    width: 49.5%;
+    background: url(/img/offer5.jpg);
+    background-size: cover;
+    box-shadow: 0 0px 1px #111;
+    
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 400px;
+    display: flex;
+    margin: 3px;
+    overflow: hidden;
+    
+    
+}
+.offer .content .box4 .title{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    margin-top: 180px;
+}
+
+  .offer .content .box4 h2{
+    font-weight: 600;
+    font-size: 2em; 
+   
+    color: #623301;
+  }
+  .offer .content .box4 .title p{
+    color: rgb(52, 52, 52);
+    
+  }
+  .offer .content .box4 .title p span{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #111;
+    
+  }
+
+  .offer .content .box4 .title a{
+    padding: 10px;
+    background-color: #198307;
+    width: 150px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+  }
+  .offer .content .box4 .title a:hover{
+    letter-spacing: 4px;
+  }
+
+  /* product----------------------------------------------------------------------------------- */
+
+  .product{
+    margin-top: 50px;
+  }
+  .product .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
+  .product .content .box{
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 0px 1px #111;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.product .content .box:hover{
+    transform: scale(1.05);
+
+}
+
+.product .content .olivebox span{
+  width: 50px;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  z-index: 3;
+  color: #fff;
+  background-color: red;
+  position: absolute;
+  text-align: center;
+  
+  
+}
+
+
+.product .content .box .imgbx {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    /* text-align: center; */
+    left: 35px;
+    background-size: cover;
+    /* background-position: center; */
+    top: 10px;
+}
+
+.product .content .box .imgbx img {
+    position: relative;
+    top: 0;
+    width: 61%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.product .content .box .text{
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 193px;
+    
+}
+
+  .product .content .box .text h4{
+    
+    text-align: center;
+    font-weight: 600;
+   font-size: 1.1em;
+    margin-bottom: 4px;
+    color: #198307;
+  }
+
+
+  .product .content .box .text p{
+    text-align: center;
+    font-size: 1.1em;
+
+  }
+
+  .product .content .box .text h5{
+    text-decoration: line-through;
+    font-weight: 400;
+  }
+
+  .services{
+    margin-top: 50px;
+  }
+
+  .services .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    
+    background: url(/img/lightbg.png);
+    background-size: 500px;
+    
+}
+
+
+
+
+.services .content .box {
+  width: 280px;
+  margin: 15px;
+  box-shadow: 0 0px 1px #111;
+  transition: 0.5s;
+  display: flex;
+  height: 86px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.services .content .box:hover{
+    transform: scale(1.05);
+
+}
+
+  
+
+.services .content .box .imgbx {
+  position: relative;
+  width: 41%;
+  height: 150px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.services .content .box .imgbx img {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  width: 65px;
+  height: 65px;
+  background-size: cover;
+  background-position: center;
+}
+.services .content .box .title
+{
+  width: 166px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.services .content .box .title h3{
+  color: #198307;
+}
+.services .content .box .title p
+{
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.testimonials .content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  background: url(/img/lightbg.png);
+  background-size: 500px;
+}
+
+.testimonials .content .box{
+  width: 340px;
+  margin: 20px;
+  border-radius: 2px;
+  padding: 40px;background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px gray;
+}
+
+.testimonials .content .box .imgbx{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials .content .box .imgbx img{
+  
+  height: 100%;
+
+}
+
+.testimonials .content .box .text{
+  text-align: center;
+}
+
+.testimonials .content .box .text p{
+  color: #666;
+  font-style: italic;
+}
+
+.testimonials .content .box .text h3{
+  margin-top: 20px;
+  color: #198307;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+
+
+.bestseller{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bestseller .maintitle{
+  margin-left: 20px;
+  margin-top: 80px;
+  padding-left: 3px;
+  border-left: 3px solid #198307;
+
+}
+
+.bestseller{
+  /* margin-top: 20px; */
+  background: url(/img/lightbg.png);
+  background-size: 500px;
+}
+.bestseller .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.bestseller .content .box{
+  width: 200px;
+  margin: 15px 50px;
+  box-shadow: 0 0px 1px #111;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  
+}
+
+.bestseller .content .box:hover{
+  transform: scale(1.05);
+
+}
+
+.bestseller .content .span span{
+width: 50px;
+padding: 2px;
+border-radius: 5px;
+font-size: 0.8em;
+z-index: 3;
+color: #fff;
+background-color: red;
+position: absolute;
+text-align: center;
+
+
+}
+
+
+.bestseller .content .box .imgbx {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  /* text-align: center; */
+  left: 35px;
+  background-size: cover;
+  /* background-position: center; */
+  top: 10px;
+}
+
+.bestseller .content .box .imgbx img {
+  position: relative;
+  top: 0;
+  width: 61%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+}
+
+.bestseller .content .box .text{
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 193px;
+  
+}
+
+.bestseller .content .box .text h4{
+  
+  text-align: center;
+  font-weight: 600;
+ font-size: 1.1em;
+  margin-bottom: 4px;
+  color: #198307;
+}
+
+
+.bestseller .content .box .text p{
+  text-align: center;
+  font-size: 1.1em;
+
+}
+
+.bestseller .content .box .text h5{
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.company .content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  flex-wrap: wrap;
+  background: url(/img/lightbg.png);
+  background-size: 500px;
+  
+}
+
+.company .content .box {
+  height: 100px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.company .content .box .imgbx{
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-size: cover;
+}
+
+.company .content .box .imgbx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:80px ;
+  
+}
+
+.orderbox{
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: start;
+  position: relative;
+  align-items: center;
+  background: url(/img/lastcover.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  
+}
+
+.orderbox .content{
+  margin-left: 130px;
+  max-width: 350px;
+  text-align: left;
+}
+.orderbox .content .heading{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+
+
+.orderbox .content h2 {
+font-size: 2em;
+color: #111;
+line-height: 75px;
+margin-left: -23px;
+border-left: 4px solid green;
+padding-left: 22px;
+line-height: 50px;
+}
+
+.orderbox .content .box .title p{
+  font-size: 0.9em;
+  color: #111;
+  margin-top: 40px;
+  padding: 0px 10px;
+
+}
+
+
+.orderbox .content .box .title a{
+  font-size: 1em;
+  color: #fff;
+  background: #198307;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.orderbox .content .box .title a:hover{
+  letter-spacing: 3px;
+
+}
+
+
+
+@media (max-width:990px){
+  header, header .sticky {
+    padding: 10px 20px;
+}
+p{
+font-size: 0.8em;
+}
+
+header .navigation{
+  display: none;
+}
+header .navigation.active{
+  height: calc(100% - 101px);
+    width: 100%;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+   
+}
+
+
+
+header .navigation li{
+  margin-left: 0;
+}
+
+
+header .navigation li a{
+  color: #111;
+  font-size: 1.5em;
+  font-weight: 300;
+  
+}
+
+.menuToogle{
+position: relative;
+width: 40px;
+height: 40px;
+background: url(/img/list.png);
+filter: invert(1);
+background-size: 30px;
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+
+}
+.menuToogle.active{
+
+background: url(/img/cross.png);
+background-size: 50px;
+filter: invert(1);
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+
+}
+.header2 {
+
+  top: 50px;
+  
+  padding: 0px 10px;
+  
+}
+
+
+.banner {
+  position: relative;
+ display: block;
+  top: 35px;
+  min-height: 45vh;
+}
+.banner .content h2 {
+  font-size: 2em;
+  line-height: 41px;
+}
+
+.banner .content {  
+  max-width: 270px;
+}
+
+.banner .content .peragraph {
+  display: block;
+  
+}
+.feacturedProduct .content {
+  padding: 15px 0px; 
+}
+
+.feacturedProduct .content .box {
+  width: 290px;
+  margin: 10px 15px;
+  height: 145px;
+  position: relative;
+}
+
+.feacturedProduct .content .box .imgbx {
+  height: 145px;
+}
+.feacturedProduct .content .box .text h2 {
+  font-size: 0.8em;
+}
+
+.catogary .content{
+  justify-content: center;
+}
+.offer .content .box1 {
+  width: 48.5%;
+  height: 235px;
+}
+
+.offer .content .box1 h2 {
+ 
+  font-size: 1.4em;
+  margin-top: 55px;
+  
+}
+
+.offer .content .box1 .title a {
+  padding: 3px;
+  width: 113px;
+  letter-spacing: 0px;
+  font-size: 0.9em;
+  border-radius: 2px;
+}
+.offer .content .box2 {
+  width: 48.5%;
+  height: 235px;
+}
+
+.offer .content .box2 h2 {
+ 
+  font-size: 1.4em;
+  margin-top: 55px;
+  
+}
+.offer .content .box2 .title {
+  
+  margin-top: 0px;
+}
+
+.offer .content .box2 .title a {
+  padding: 3px;
+  width: 113px;
+  letter-spacing: 0px;
+  font-size: 0.9em;
+  border-radius: 2px;
+}
+
+.offer .content .box3 {
+  width: 48.5%;
+  height: 235px;
+}
+
+.offer .content .box3 h2 {
+  font-size: 1.4em;
+  margin-top: 55px;
+  
+}
+.offer .content .box3 .title { 
+  margin-top: 0px;
+}
+
+.offer .content .box3 .title a {
+  padding: 3px;
+  width: 113px;
+  letter-spacing: 0px;
+  font-size: 0.9em;
+  border-radius: 2px;
+  margin-top: 5px;
+
+}
+
+
+.offer .content .box4 {
+  width: 48.5%;
+  height: 235px;
+}
+
+.offer .content .box4 h2 {
+  font-size: 1.4em;
+  margin-top: 55px;
+  
+}
+
+
+.offer .content .box4 .title a {
+  padding: 3px;
+  width: 113px;
+  letter-spacing: 0px;
+  font-size: 0.9em;
+  border-radius: 2px;
+  margin-top: 7px;
+
+}
+.offer .content .box4 .title {
+  margin-top: 53px;
+}
+
+
+.product {
+  margin-top: -10px;
+}
+.product .content {
+ 
+  justify-content: center;
+  margin-top: 7px;
+}
+.product .content .box {
+  height: 210px;  
+}
+.services {
+  margin-top: 10px;
+}
+.services .content {
+  padding: 30px 0px; 
+}
+
+.testimonials .content .box {
+  width: 260px;
+  
+}
+.bestseller .content {
+  justify-content: center;
+  margin-top: 20px;
+}
+.bestseller .content .box {
+  width: 200px;
+  height: 200px;
+  
+}
+.company .content { 
+  justify-content: center;
+  margin: 0px 10px;  
+}
+.company .content .box {
+  height: 100px;
+  width: 116px;
+}
+
+.orderbox {
+  min-height: 40vh;
+}
+.orderbox .content h2 {
+  font-size: 1.5em;
+  line-height: 30px;
+}
+.orderbox .content {
+  margin-left: 40px;
+  max-width: 250px;
+  
+}
+
+.orderbox .content .box .title p {
+  
+  margin-top: 20px;
+  padding: 0px 0px;
+  width: 140px;
+}
+.orderbox .content .box .title a {
+  
+  padding: 5px 8px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  font-size: 0.8em;
+}
+}
+
+
+@media(max-width:535px){
+  .header1 .content {
+    display: block;
+    text-align: center;
+}
+.header1 .content ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+ justify-content: center;
+}
+header .logo {
+  font-size: 1.5em;
+}
+
+
+
+.header2 {
+  top: 70px;
+  
+}
+
+.header2.sticky {
+  padding: 18px 20px;
+}
+header .navigation.active {
+  height: calc(100% - 115px);
+  
+  top: 115px;
+  
+}
+
+.banner{
+  min-height: 40vh;
+}
+.banner .content {
+  max-width: 270px;
+  position: relative;
+  bottom: 40px;
+}
+.banner .content h2 {
+  font-size: 1.5em;
+  line-height: 32px;
+}
+.btn {
+ 
+  padding: 5px 20px;
+ 
+}
+.menuToogle {
+  
+  width: 25px;
+  height: 25px;
+  
+}
+
+.catogary .content {
+  padding: 15px 20px;
+}
+.catogary .content .box {
+  width: 126px;
+  height: 104px;
+  margin: 10px;
+}
+.catogary .content .box .imgbx { 
+  height: 150px;
+  left: 30px;
+  top: 20px;
+}
+.catogary .content .box .text h4 {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.offer .content .box1,.offer .content .box2, .offer .content .box3, .offer .content .box4 {
+  width: 100%;
+  height: 235px;
+}
+.offer .content .box1 .title, .offer .content .box2 .title, .offer .content .box3 .title, .offer .content .box4.title {
+  max-width: 190px;
+  
+}
+.offer .content .box4 .title {
+  margin-top: 65px;
+}
+
+.titleText {
+  font-size: 1.5em;
+}
+.company .content .box {
+  height: 82px;
+  width: 105px;
+}
+.orderbox .content h2 {
+  font-size: 1.2em;
+  line-height: 25px;
+}
+.orderbox .content {
+  margin-left: 10px;
+  max-width: 205px;
+  margin-top: 20px;
+}
+}
